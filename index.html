@@ -1,23 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>
-            My HTML5 Document
-            <meta name="description" content="Lec3 Introduction to HTML">
-        </title>
-        <body>
-            <h1>
-                Introduction to HTML
-            </h1>
-            <h6>
-                New heading
-            </h6>
-            <p>
-                My website            
-                <a href="https://www.hkr.se/en">Visit HKR</a>
-            </p>
-
-        </body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lecture 3</title>
+        <meta name="description" content="A sample website"> 
     </head>
+
+    <body>
+        <h1>Image Example</h1>
+
+        <a href="https://www.hkr.se">
+            <img 
+                src="img/gg.png" 
+                alt="A placeholder image of the size 500 x 500"
+                width="250"
+
+            />
+        </a>
+
+        <h1>Video example</h1>
+        <video width="1280" height="720" controls>
+            <source src="eftertext.mp4" type="video/mp4"/>   
+        </video>
+
+        <h1>Audio example</h1>
+
+        <audio controls>
+            <source src="00_HarapAlb.mp3" type="audio/mp3"/>
+            Your browser does not support the audio element
+        </audio>
+
+        <h1>Semantic Tag Examples</h1>
+        <article>
+            <header>
+                <h2>Article Title</h2>
+                <p>Published on <time>2023-11-10</time></p>
+            </header>
+            <p>Article content...</p>
+            <footer></footer>
+        </article>
+
+        <h1>Emphasis Tag Examples</h1>
+        <p>This is <strong>important</strong> text, this is emphasised</p>
+        <p>This is <mark>highlighted</mark> text</p>
+
+        <h1>List Example</h1>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+
+        <ol>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ol>
+
+        <ul>
+            <li>First Item</li>
+            <li>
+                <ol>
+                    <li>Subitem 1</li>
+                    <li>Subitem 2</li>
+                </ol>
+            </li>
+        </ul>
+
+        <h1>Table example</h1>
+        <table>
+            <tr>
+                <th>header 1</th>
+                <th>header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+            <tr>
+                <td>Data 1.1</td>
+                <td>Data 2.1</td>
+            </tr>
+        </table>
+
+        <form action="" method="post">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" />
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
+
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass">
+
+            <input type="submit" value="CLICK ME">
+        </form>
+
+    </body>
 </html>
-<!--hello-->
