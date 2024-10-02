@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact</title>
+</head>
+<body>
+
+<header class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <div class="icons-wrapper">
+
+                <a href="index.html"><img src="assets/eden.png" alt="artwork icon" class="icon"></a>
+
+                    <img src="assets/orangestar.png" alt="Drawing of an orange star" class="icon stars">
+                    <img src="assets/lightbluestar.png" alt="Drawing of a light blue star" class="icon stars">
+                    <img src="assets/darkbluestar.png" alt="Drawing of a dark blue star" class="icon stars">
+                    <img src="assets/blackstar.png" alt="Drawing of a black star" class="icon stars">
+                
+            </div>
+
+            <div class="header-menu">
+              <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="contact.html" class="active-tab">Contact</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="artgallery.html">Art gallery</a></li>
+                <li><a href="projects.html">Projects</a></li>
+              </ul>
+            </div>
+
+            <div class="off-screen-menu">
+              <ul>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="artgallery.html">Art gallery</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+
+              <div class="off-stars">
+                <img src="assets/orangestar.png" alt="" class="icon">
+                <img src="assets/lightbluestar.png" alt="" class="icon">
+                <img src="assets/darkbluestar.png" alt="" class="icon">
+              </div>
+            </div>
+            
+            <nav class="nav-ham-menu">
+              <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </nav>
+        </div>
+      </header>
+
+      <script src="menu.js"></script>
+
+      <div class="container">
+        <h1>Contact</h1>
+        <b>Write me an email:</b>
+        <form method="POST" action="mailto: ekstdhanna@gmail.com" 
+              enctype="multipart/form-data" target="_blank">
+            <div class="control">
+                Name:
+                <input aria-required="" id="name" type="text" placeholder="Your name"/>
+            </div>
+            <br>
+            <div class="control">
+                Email:
+                <input aria-required="" id="email" type="email" placeholder="Your email" />
+            </div>
+            <br>
+            <div class="control">
+                Message:
+                <textarea rows="7" cols="30" name="message">
+                </textarea>
+            </div>
+            <br>
+            <div class="control">
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+
+     <footer>
+      <div class="footerContainer">
+        
+        <div class="socialIcons">
+            <a href="https://www.linkedin.com/in/hanna-ekstedt-ab2b0821b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/spagettigod/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Schatziek" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <div class="footerNav">
+          <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="artgallery.html">Art gallery</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+
+      </div>        
+    </footer>
+
+</body>
+</html>
