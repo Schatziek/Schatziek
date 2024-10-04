@@ -209,19 +209,15 @@ html, body { overflow-x: hidden; }
     padding: 25px;
     background-color: rgb(193, 206, 243);
   }
-  .aboutme-list h2 {
-    font-size: 2.5em;
-    margin-top: 30px;
-  }
   .aboutme-list ul {
     text-align: left;
     display: inline-block;
     font-size: 2em;
-    margin: 20px;
+    margin: 35px;
     list-style-type: none;
   }
   .aboutme-list ul li {
-    margin: 20px 0;
+    margin: 30px 0;
   }
   .aboutme-list ul li a {
     text-decoration: none;
