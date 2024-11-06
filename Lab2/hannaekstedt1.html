@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Form</title>
+  <script src="hannaekstedt1.js"></script>
+  <style>
+    /* Styles for error and success messages */
+    .error-message {
+      color: red;
+      font-size: 0.9em;
+      display: none;
+    }
+    .answer-message {
+      color: blueviolet;
+      font-size: 0.9em;
+      display: none;
+    }    
+    .score-message {
+      color: brown;
+      font-size: 1em;
+      display: none;
+    }
+    #successMessage {
+      display: none;
+      color: green;
+      font-weight: bold;
+    }
+    .required::after {
+      content: " *";
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Quiz Form</h1>
+
+  <form id="quiz">
+    <!-- First Name Field -->
+    <label for="firstName" class="required">First Name:</label>
+    <input type="text" id="firstName" name="firstName">
+    <div id="firstNameError" class="error-message"></div>
+
+    <!-- Last Name Field -->
+    <label for="lastName" class="required">Last Name:</label>
+    <input type="text" id="lastName" name="lastName">
+    <div id="lastNameError" class="error-message"></div>
+
+    <!-- Email Field -->
+    <label for="email" class="required">Email:</label>
+    <input type="text" id="email" name="email">
+    <div id="emailError" class="error-message"></div>
+
+    <!-- Question 1: Radio Buttons -->
+    <p class="required">Which one of MARINA's albums features the track "Primadonna"?</p>
+    <label>
+        <input type="radio" id="electraheart" name="question1" class="question1" value="electraheart">Electra Heart<br>
+    </label>
+    <label>
+        <input type="radio" id="familyjewels" name="question1" class="question1" value="familyjewels">The Family Jewels<br>
+    </label>
+    <label>
+        <input type="radio" id="fearlove" name="question1" class="question1" value="fearlove">Fear + Love<br>
+    </label>
+    <label>
+        <input type="radio" id="froot" name="question1" class="question1" value="froot">Froot<br>
+    </label>
+    <label>
+        <input type="radio" id="ancientdreams" name="question1" class="question1" value="ancientdreams">Ancient Dreams In A Modern Land<br>
+    </label>
+    <div id="q1Error" class="error-message"></div>
+    <div id="q1Answer" class="answer-message"></div>
+
+    <!-- Question 2: Checkboxes -->
+    <p class="required">Which of these songs are Sabrina Carpenter songs? (Multiple choice)</p>
+    <label>
+      <input type="checkbox" id="sabrinasong1" name="question2" class="question2" value="Lover">Lover<br>
+    </label>
+    <label>
+      <input type="checkbox" id="sabrinasong2" name="question2" class="question2" value="ReadyourMind">Read your Mind<br>
+    </label>
+    <label>
+      <input type="checkbox" id="sabrinasong3" name="question2" class="question2" value="Thumbs">Thumbs<br>
+    </label>
+    <label>
+      <input type="checkbox" id="sabrinasong4" name="question2" class="question2" value="Dejavu">deja vu<br>
+    </label>
+    <label>
+      <input type="checkbox" id="sabrinasong5" name="question2" class="question2" value="Espresso">Espresso<br>
+    </label>
+    <div id="q2Error" class="error-message"></div>
+    <div id="q2Answer" class="answer-message"></div>
+
+    <!-- Question 2: Radio buttons -->
+    <p>In which TV-show did Robyn appear as a guest star in 2010?</p>
+    <label>
+    <input type="radio" id="HIMYM" name="question3" class="question3" value="HIMYM">How I Met Your Mother<br>
+    </label>
+    <label>
+    <input type="radio" id="PLL" name="question3" class="question3" value="PLL">Pretty Little Liars<br>
+    </label>
+    <label>
+    <input type="radio" id="supernatural" name="question3" class="question3" value="supernatural">Supernatural<br>
+    </label>
+    <label>
+    <input type="radio" id="glee" name="question3" class="question3" value="glee">Glee<br>
+    </label>
+    <label>
+    <input type="radio" id="gossipgirl" name="question3" class="question3" value="gossipgirl">Gossip Girl<br>
+    </label>
+    <div id="q3Answer" class="answer-message"></div>
+
+    <!-- Question 2: Checkboxes -->
+    <p>Which songs did Robyn perform in said episode? (Multiple choice)</p>
+    <label>
+      <input type="checkbox" id="robynsong1" name="question4" class="question4" value="Honey">Honey<br>    
+    </label>
+    <label>
+        <input type="checkbox" id="robynsong2" name="question4" class="question4" value="Dancingonmyown">Dancing on My Own<br>
+    </label>
+    <label>
+        <input type="checkbox" id="robynsong3" name="question4" class="question4" value="Callyourgirlfriend">Call Your Girlfriend<br>
+    </label>
+    <label>
+        <input type="checkbox" id="robynsong4" name="question4" class="question4" value="Showmelove">Show Me Love<br>
+    </label>
+    <label>
+        <input type="checkbox" id="robynsong5" name="question4" class="question4" value="Hangwithme">Hang with Me<br>
+    </label>
+    <div id="q4Answer" class="answer-message"></div>
+
+    <!-- Question 2: Textfield -->
+    <p>What is Ariana Grande's 7th studio album called?</p>
+    <label>
+      <input type="text" id="textquestion" name="question5" class="question5">
+    </label>
+    <div id="q5Answer" class="answer-message"></div>
+    <!-- Submit Button -->
+    <button type="submit">Submit Quiz</button>
+  </form>
+
+  <!-- Success Message -->
+  <div id="successMessage">Thank you for submitting the quiz!</div>
+  <div id="finalScore" class="score-message"></div>
+  
