@@ -5,54 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz Form</title>
   <script src="hannaekstedt1.js"></script>
-  <style>
-    /* Styles for error and success messages */
-    .error-message {
-      color: red;
-      font-size: 0.9em;
-      display: none;
-    }
-    .answer-message {
-      color: blueviolet;
-      font-size: 0.9em;
-      display: none;
-    }    
-    .score-message {
-      color: brown;
-      font-size: 1em;
-      display: none;
-    }
-    #successMessage {
-      display: none;
-      color: green;
-      font-weight: bold;
-    }
-    .required::after {
-      content: " *";
-      color: red;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="hannaekstedt.css" />
 </head>
 <body>
-
-  <h1>Quiz Form</h1>
-
+  <div class="form-div"> 
+    
+    <h1>Quiz Form</h1>
   <form id="quiz">
+ 
+
+
     <!-- First Name Field -->
-    <label for="firstName" class="required">First Name:</label>
-    <input type="text" id="firstName" name="firstName">
+    <label for="firstName" class="required namefieldtext">First Name:</label>
+    <input type="text" placeholder="John" id="firstName" name="firstName" class="namefieldinput">
     <div id="firstNameError" class="error-message"></div>
 
+    <br>
+
     <!-- Last Name Field -->
-    <label for="lastName" class="required">Last Name:</label>
-    <input type="text" id="lastName" name="lastName">
+    <label for="lastName" class="required namefieldtext">Last Name:</label>
+    <input type="text" placeholder="Doe" id="lastName" name="lastName" class="namefieldinput">
     <div id="lastNameError" class="error-message"></div>
 
+    <br>
+
     <!-- Email Field -->
-    <label for="email" class="required">Email:</label>
-    <input type="text" id="email" name="email">
+    <label for="email" class="required namefieldtext">Email:</label>
+    <input type="text" placeholder="email@gmail.com" id="email" name="email" class="namefieldinput">
     <div id="emailError" class="error-message"></div>
+
+    <br>
 
     <!-- Question 1: Radio Buttons -->
     <p class="required">Which one of MARINA's albums features the track "Primadonna"?</p>
@@ -135,14 +117,15 @@
     <!-- Question 2: Textfield -->
     <p>What is Ariana Grande's 7th studio album called?</p>
     <label>
-      <input type="text" id="textquestion" name="question5" class="question5">
+      <input type="text" placeholder="Write your answer here" id="textquestion" name="question5" class="question5 namefieldinput">
     </label>
     <div id="q5Answer" class="answer-message"></div>
     <!-- Submit Button -->
-    <button type="submit">Submit Quiz</button>
-  </form>
+    <button type="submit" class="submit-button">Submit Quiz</button>
+  
 
   <!-- Success Message -->
   <div id="successMessage">Thank you for submitting the quiz!</div>
   <div id="finalScore" class="score-message"></div>
-  
+  </form>
+  </div>
