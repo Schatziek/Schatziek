@@ -64,6 +64,11 @@ function validateForm() {
           isValid = false;
       }
 
+      if (!document.querySelector('input[name="question3"]:checked')) {
+        showError("q3Error", "Please select an option for question 3.");
+        isValid = false;
+    }
+
       return isValid;
   }
 function showError(elementId, message) {
